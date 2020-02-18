@@ -22,3 +22,7 @@ export function loadImage(url) {
     img.onload = () => resolve(img);
   });
 }
+
+export function fetchImageData(url) {
+  return loadImage(url).then(img => imgToImageData(img));
+}
