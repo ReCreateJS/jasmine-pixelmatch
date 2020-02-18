@@ -13,7 +13,7 @@ To obtain a reference image to compare against, just set up your test with no re
 
 ```js
 describe("visual canvas test", function() {
-  it("looks right", async function(done) {
+  it("looks right", function(done) {
     let canvas = drawACanvas(200, 200);
     let context = canvas.getContext("2d");
     let canvasData = context.getImageData(0, 0, canvas.width, canvas.height);
