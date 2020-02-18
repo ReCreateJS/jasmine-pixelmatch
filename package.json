@@ -1,6 +1,6 @@
 {
   "name": "@recreatejs/jasmine-pixelmatch",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "HTML5 canvas visual regression tests for Jasmine using pixelmatch",
   "keywords": [
     "html5",
