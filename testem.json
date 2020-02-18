@@ -1,0 +1,19 @@
+{
+  "launch_in_dev": ["Chrome", "Firefox"],
+  "launch_in_ci": ["Chrome", "Firefox"],
+  "browser_args": {
+    "Chrome": ["--headless", "--disable-gpu", "--remote-debugging-port=9222"],
+    "Firefox": ["--headless"]
+  },
+  "test_page": "testem.mustache",
+  "before_tests": "npm run build",
+  "src_files": ["src/*.ts", "examples/**/*.ts"],
+  "serve_files": [
+    { "src": "dist/jasmine-pixelmatch.js" },
+    { "src": "tests/*.js" }
+  ],
+  "css_files": [],
+  "routes": {
+    "/images": "images"
+  }
+}

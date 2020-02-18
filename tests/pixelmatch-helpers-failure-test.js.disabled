@@ -1,0 +1,25 @@
+// for testing / debugging dev purposes
+describe("Failure cases", function() {
+  it("fails when image data is not visually equal", async () => {
+    let imgData = imgToImageData(await loadImage("images/first.png"));
+    let changedData = imgToImageData(await loadImage("images/second.png"));
+    expect(imgData).toVisuallyEqual(changedData);
+  });
+
+  it("explains when images are different sizes", async () => {
+    let refData = imgToImageData(await loadImage("images/first.png"));
+    let smallData = imgToImageData(await loadImage("images/small.png"));
+    expect(refData).toVisuallyEqual(smallData);
+  });
+
+  it("fails when image data is not equal", async () => {
+    let imgData = imgToImageData(await loadImage("images/first.png"));
+    let changedData = imgToImageData(await loadImage("images/second.png"));
+    expect(imgData).toEqual(changedData);
+  });
+
+  it("provides actual image when there is no expected image (for downloading)", async () => {
+    let imgData = imgToImageData(await loadImage("images/first.png"));
+    expect(imgData).toVisuallyEqual();
+  });
+});

@@ -1,16 +1,25 @@
-describe("Pixelmatch integration with jasmine", function() {
-  it("notices different images", async () => {
-    let refData = imgToImageData(await loadImage("img/first.png"));
-    let changedData = imgToImageData(await loadImage("img/second.png"));
+const { imgToImageData, loadImage } = jasminePixelmatch;
 
-    expect(refData).not.toEqual(changedData);
+describe("Success cases", function() {
+  it("visually diffs image data", async () => {
+    let refData = imgToImageData(await loadImage("images/first.png"));
+    let changedData = imgToImageData(await loadImage("images/second.png"));
     expect(refData).not.toVisuallyEqual(changedData);
   });
 
-  it("notices the same images", async () => {
-    let imgData = imgToImageData(await loadImage("img/first.png"));
+  it("checks image data inequality", async () => {
+    let refData = imgToImageData(await loadImage("images/first.png"));
+    let changedData = imgToImageData(await loadImage("images/second.png"));
+    expect(refData).not.toEqual(changedData);
+  });
 
-    expect(imgData).toEqual(imgData);
+  it("understands images visually the same", async () => {
+    let imgData = imgToImageData(await loadImage("images/first.png"));
     expect(imgData).toVisuallyEqual(imgData);
+  });
+
+  it("understands image data equality", async () => {
+    let imgData = imgToImageData(await loadImage("images/first.png"));
+    expect(imgData).toEqual(imgData);
   });
 });
