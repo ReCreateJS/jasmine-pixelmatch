@@ -1,5 +1,7 @@
 # Jasmine Pixelmatch
 
+[![Build Status](https://travis-ci.org/ReCreateJS/jasmine-pixelmatch.svg?branch=master)](https://travis-ci.org/ReCreateJS/jasmine-pixelmatch)
+
 HTML5 canvas visual difference checking in the [Jasmine](https://jasmine.github.io/) test framework with [pixelmatch](https://github.com/mapbox/pixelmatch).
 
 ## Features
