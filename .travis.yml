@@ -18,6 +18,7 @@ jobs:
     deploy:
       provider: npm
       email: jeremy@burnbright.net
+      access: public
       api_key:
         secure: CtWWOUWDuv3DWvtFKwyBerzIYIwNi2+jApbe08/L7qJKfAM0P7s28aRDRKb/SgliKua3Evnz9KT/ty9DNZhcfVZybFg3UupY5NG3pMdb1u/UnCIFWx3SOpzTW1giRS+Ss7YLbZIjRlOvLOUMZ4iOFcBwcvifSQIuShfYtp30cSuCxRyjfAnan4qhIX/A4YtM5TL54zUJ7a1bElimo1GmQtTIUfHidHNxNUrFHzC/6ZrDp+Ge9/LQBS5FfBXsE0QC8RdVIXZcZTUNRfRKmP/+DpOfTzEsH6I6OMpzEFLeO9d2LihXrmBbKVPehbKIS89rVzEYJgLDjkaAjDsvcXtxiOPUboXyb9f7w/KS/FI/E07ER9FpdHxHqkvoc9hRSuQj+d+KNCf9up75sRhn1e4Mr2EZgPsVZUxe7IH1PSCGKDr+HwmpxA2qSDrU0In3PCREut39QHKi3XdGDH4y5qYhGyaJKfBTgY3E0fBb0lwldUmFxI9h01wutb9X1VLGaXpaaDVf9Xo2iFhTuz2yOIsW9Cvmgm1xBt4kClAjgoUI2n3m/cSMn0pSJ3Pu0GlSpmz6o069iJwcn1dh7CCjcpzkp/PgSQIlHsItAABXDG5nrqOTpia/qmBbZ/8EhVcBD+hvh2BzQKPuaNkp8msC/79iXlhLMxLr9yVuZRiTWCjZv9Y=
       on:
