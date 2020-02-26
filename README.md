@@ -34,7 +34,7 @@ describe("visual canvas test", function() {
     let canvas = drawACanvas(200, 200);
     let context = canvas.getContext("2d");
     let canvasData = context.getImageData(0, 0, canvas.width, canvas.height);
-    let referenceData = imgToImageData(await loadImage("saved_image.png"));
+    let referenceData = await fetchImageData("saved_image.png");
     expect(canvasData).toVisuallyEqual(referenceData);
   });
 });
