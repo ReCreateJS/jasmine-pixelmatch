@@ -9,6 +9,12 @@ HTML5 canvas visual difference checking in the [Jasmine](https://jasmine.github.
 - See differences
 - Base64 image dump of images in headless environments
 
+## Installation
+
+```sh
+npm i @recreatejs/jasmine-pixelmatch
+```
+
 ## Example
 
 To obtain a reference image to compare against, just set up your test with no reference image, like so:
