@@ -12,7 +12,7 @@ HTML5 canvas visual difference checking in the [Jasmine](https://jasmine.github.
 ## Installation
 
 ```sh
-npm i @recreatejs/jasmine-pixelmatch
+npm install @recreatejs/jasmine-pixelmatch
 ```
 
 ## Example
